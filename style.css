@@ -1,0 +1,630 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body 
+{
+    font-family: 'Lato', sans-serif;
+    background: url(img/bg.jpg);
+}
+
+h1,
+h2,
+h3,
+h4 
+{
+    font-weight: 700;
+    color: #2c3e4f;
+    text-align: left;
+}
+
+p
+{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #3c3c3b;
+}
+
+a
+{
+    text-decoration: none;
+    color: #2c3e4f;
+    transition: ease 0.2s;
+}
+
+a:hover
+{
+    color: #399dd0;
+}
+
+body > header 
+{
+/*
+    display: flex;
+    flex-wrap: wrap;
+*/
+    padding: 0 1.4em 3em;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 63.9999em;
+}
+
+body > header > h1
+{
+    text-align: center;
+    margin-top: 1.3em;
+}
+
+header section
+{
+    order: -1;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+header p {
+    margin-top: 1em;
+}
+
+header > a
+{
+    clear: left;
+    display: block;
+}
+
+header ul 
+{
+    display: block;
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+header li 
+{
+    list-style-type: none;
+    float: left;
+}
+
+header li > a 
+{
+    display: block;
+    padding: 1em;
+    background-color: #399dd0;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0.3em;
+    /*margin: 0.2em;*/
+    margin: 0 0.4em 0.4em 0;
+}
+
+header li > a:hover
+{
+    background-color: #2c3e4f;
+    color: #fff;
+}
+
+header > form 
+{
+    display: inline;
+    text-align: left;
+    margin: 1em 0;
+    float: left;
+    width:  20em;
+}
+
+header > form input[type=text]
+{
+    border: none;
+    background-color: #3c3c3b;
+    padding: 1.4em 0 1.4em 2em;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0.3em 0 0 0.3em;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Lato', sans-serif;
+}
+
+header > form input[type=submit]
+{
+    width: 20%;
+    padding: 2em 0;
+    box-sizing: border-box;
+    background-color: #fc824e;
+    background-image: url(img/zoeken.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999em;
+    border: none;
+    border-radius: 0 0.3em 0.3em 0;
+    float: left;
+    cursor: pointer;
+}
+
+/* container van de aside elementen */
+
+body > div
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 63.9999em;
+}
+
+/* styling van de artikelen in de main */
+
+main 
+{
+    width: 100%;
+    background-color: #fff;
+    padding: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main article 
+{
+    margin: 0 1.3em;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+main article p 
+{
+    margin: 2em 0;
+}
+
+main article section p:last-child 
+{   
+    padding-bottom: 2em;
+    border-bottom: 0.2em dashed #ccc;
+}
+
+main img
+    {
+        width: 100%;
+        margin-top: 2em;
+    }
+
+main ul
+{
+    padding-left: 1em;
+}
+
+main ul li
+{
+    list-style-image: url(img/check.png);
+}
+
+/* styling van de aside artikelen */
+
+aside:nth-of-type(-n+2)
+{
+    width: 100%;
+    background-color: #fff;
+    padding: 3em 0;
+}
+
+aside > h1 
+{
+    padding: 0.5em 2em 0.5em 1.4em;
+    background-color: #399dd0;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+aside > h1:after
+{
+    content: "";
+    width: 0; 
+	height: 0; 
+	border-top: 1.2em solid transparent;
+	border-bottom: 1.1em solid transparent; 	
+	border-right:0.9em solid #fff;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+aside article 
+{
+    margin: 2em;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    border-bottom: 0.2em dashed #ccc;
+}
+
+aside article > footer 
+{
+    order: 1;
+}
+
+article > header > h1
+{
+    margin-bottom: 1em;
+}
+
+aside article > header p
+{
+    margin: 0;
+    font-style: italic;
+    color: #888;
+    font-weight: 300;
+}
+
+aside article section p 
+{
+    margin: 2em 0;
+}
+
+blockquote 
+{
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+aside > article > section > h1 
+{
+    margin-top: 2em;
+}
+
+aside article ul
+{
+    padding-left: 1em;
+}
+
+aside article ul li
+{
+    list-style-image: url(img/check.png);
+    text-align: left;
+    font-size: 1em;
+    color: #3c3c3b;
+    word-wrap: break-word;
+}
+
+/* styling van de footer */
+
+body > footer 
+{
+    background-color: #2c3e4f;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2em;
+    max-width: 63.9999em;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body > footer p 
+{
+    color: #fff;
+}
+
+body > footer h1 
+{
+    color: #399dd0;
+    width: 100%;
+    margin: 2em 0 0.5em 0;
+    font-weight: 300;
+}
+
+body > footer ul
+{
+    padding-left: 1em;
+    color: #fff;
+}
+
+body > footer ul > li
+{
+    font-weight: 700;
+}
+
+body > footer ul > ul > li 
+{
+    font-weight: 300;
+}
+
+body > footer ul li
+{
+    list-style-image: url(img/arrow.png);
+    text-align: left;
+}
+
+/* styling voor de formulierenpagina */
+
+div > section > p 
+{
+    margin-top: 1em;
+}
+
+section > form
+{
+    margin-top: 3em;
+}
+
+section > form > fieldset:first-of-type
+{
+    padding: 1em;
+    width: 40%;
+    border: 1px solid #3c3c3b;
+    border-radius: 0.3em;
+    float: left;
+    box-sizing: border-box;
+}
+
+section > form > fieldset:nth-last-of-type(-n+2)
+{
+    padding: 1em;
+    width: 55%;
+    border: 1px solid #3c3c3b;
+    border-radius: 0.3em;
+    float: right;
+    box-sizing: border-box;
+}
+
+fieldset > input[type=text],
+fieldset > input[type=email],
+fieldset > input[type=number],
+fieldset > input[type=date],
+fieldset > textarea
+{
+    padding: 1em 0 1em 1em;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    border: 1px solid #3c3c3b;
+    transition: ease 0.2s;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+fieldset > input[type=text]:focus,
+fieldset > input[type=email]:focus,
+fieldset > input[type=number]:focus
+{
+    background-color: #ececec;
+}
+
+fieldset > label
+{
+    display: inherit;
+    margin: 0.6em 0 0.3em;
+}
+
+fieldset > h3
+{
+    margin-top: 1em;
+}
+
+section > form > fieldset button[type=submit]
+{
+    padding: 1.5em;
+    box-sizing: border-box;
+    background-color: #fc824e;
+    border: none;
+    border-radius: 0.3em;
+    float: left;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    margin-top: 2em;
+    display: inline;
+    float: right;
+}
+
+section > form > div > input[type=radio]
+{
+    display: inline;
+}
+
+.is-invisible{
+	display: none;
+}
+
+.is-visible {
+	display: block;
+}
+
+body > div > section 
+{
+    padding: 3em 2em;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+form > div
+{
+    float: left;
+    margin: 1em 0 1em 2em;
+}
+
+form > div > label
+{
+    margin: 0 0.8em 0 0.2em;
+}
+
+/* zoek formulier in de footer */
+
+footer > form 
+{
+    display: inline;
+    text-align: left;
+    margin: 1em 0;
+    float: left;
+    width:  20em;
+}
+
+footer > form input[type=text]
+{
+    border: none;
+    background-color: #fff;
+    padding: 1.4em 0 1.4em 2em;
+    font-size: 0.9em;
+    color: #2c3e4f;
+    font-weight: 300;
+    border-radius: 0.3em 0 0 0.3em;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+    font-family: 'Lato', sans-serif;
+}
+
+footer > form input[type=submit]
+{
+    width: 20%;
+    padding: 1.4em 0;
+    box-sizing: border-box;
+    background-color: #399dd0;
+    background-image: url(img/zoeken.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999em;
+    border: none;
+    border-radius: 0 0.3em 0.3em 0;
+    float: left;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+/* portrait phone (< 568px) */
+@media screen and (max-width:35.500em) {
+    
+    body > header 
+    {
+        padding: 0 1em 3em;
+    }
+    
+    header form
+    {
+        width: 100%;
+        border-top: 0.2em dashed #999;
+        padding-top: 1em;
+    }
+    
+    header li
+    {
+        min-width: 100%;
+    }
+    
+    header li > a
+    {
+        margin: 0.2em 0;
+    }
+    
+    video 
+    {
+        width: 100%;
+    }
+    
+    main article 
+    {
+        margin: 0 1em;
+    }
+    
+    aside article
+    {
+        margin: 2em 1em;
+    }
+    
+    body > div > section
+    {
+        padding: 3em 1em;
+    }
+    
+    section > form > fieldset
+    {
+        width: 100%!important;
+    }
+    
+    footer form
+    {
+        width: 100%;
+    }
+    
+}
+
+/* landscape phone and portrait tablet (>= 480px < 960px) */
+@media screen and (min-width:30em) and (max-width:59.9999em) {
+    
+    
+}
+
+/* landscape tablet and normal monitor (>= 960px) */
+@media screen and (min-width:60em) {
+    
+    main 
+    {
+        width: 70%;
+        box-sizing: border-box;
+        order: -1
+    }
+    
+    main article
+    {
+        margin: 0 2em;
+    }
+    
+    aside:nth-of-type(-n+2)
+    {
+        width: 70%;
+        box-sizing: border-box;
+        margin-top: 4em;
+    }
+    
+    aside:last-of-type
+    {
+        width: 30%;
+        order: -1;
+        background-color: #ccc;
+    }
+    
+    aside article:last-of-type
+    {
+        border: none;
+    }
+    
+    video
+    {
+        display: none;
+    }
+    
+    body > div > section
+    {
+        order: -1;
+        width: 70%;
+    }
+    
+    body > footer
+    {
+        margin-top: 4em;
+    }
+    
+    body > footer a
+    {
+        color: #fff;
+    }
+    
+    
+}
+
+    
